@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hi dear My name is` *Geethu*
+`Hi dear My name is` *Gowri*
 `I Can help to Manage your Group! Hit` *📚Commands* `to Enter Help.` 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/Geethu_pro_bot?startgroup=true"),
+            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/GcatX_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
@@ -91,14 +91,14 @@ buttons = [
         InlineKeyboardButton(
             text="💾 SOURCE", callback_data="source_"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/Readmeab"
+            text="👥 SUPPORT", url="https://t.me/Cat_Telegram_Project_Club"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-*『HELP BUTTONS HERE』*"""
+```Here is the help Buttons Available```[😝]"""
 
 
 DONATE_STRING = """No need..."""
@@ -346,16 +346,16 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Geethu*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Gowri*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
                  ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Masha's licensed under the GNU General Public License v3.0_
+                 \n_Gowri's licensed under the GNU General Public License v3.0_
                  Here is the [💾Repository](https://t.me/Cat_Telegram_Project_Club).
-                 If you have any question about Geethu, let us know at @Cat_of_TelegramX.""",
+                 If you have any question about **Gowri**, let us know at @Cat_of_TelegramX.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -381,7 +381,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Geethu*
+            text=""" Hi..🤗 I'm **Gowri**
                  \nHere is the [Source Code](https://t.me/Cat_Telegram_Project_Clu) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
